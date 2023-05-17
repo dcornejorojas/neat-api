@@ -1,0 +1,43 @@
+[debug] [2023-05-17T13:18:12.823Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T13:18:12.834Z] Command:       /usr/local/bin/node /Users/matiascornejo/Documents/Projects/src/python-clean-arch/node_modules/.bin/firebase serve
+[debug] [2023-05-17T13:18:12.835Z] CLI Version:   12.0.1
+[debug] [2023-05-17T13:18:12.835Z] Platform:      darwin
+[debug] [2023-05-17T13:18:12.835Z] Node Version:  v18.16.0
+[debug] [2023-05-17T13:18:12.913Z] Time:          Wed May 17 2023 09:18:12 GMT-0400 (hora estándar de Chile)
+[debug] [2023-05-17T13:18:12.913Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T13:18:13.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T13:18:13.247Z] > authorizing via signed-in user (dmcornejorojas@gmail.com)
+[debug] [2023-05-17T13:18:13.247Z] [iam] checking project neat-project-387004 for permissions ["firebase.projects.get"]
+[debug] [2023-05-17T13:18:13.250Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/neat-project-387004:testIamPermissions [none]
+[debug] [2023-05-17T13:18:13.250Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/neat-project-387004:testIamPermissions x-goog-quota-user=projects/neat-project-387004
+[debug] [2023-05-17T13:18:13.250Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neat-project-387004:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T13:18:14.313Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/neat-project-387004:testIamPermissions 200
+[debug] [2023-05-17T13:18:14.313Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neat-project-387004:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T13:18:14.314Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 [none]
+[debug] [2023-05-17T13:18:14.685Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 200
+[debug] [2023-05-17T13:18:14.685Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 {"projectId":"neat-project-387004","projectNumber":"195861851511","displayName":"neat-project","name":"projects/neat-project-387004","resources":{"hostingSite":"neat-project-387004"},"state":"ACTIVE","etag":"1_16ef6408-8e79-4db4-b48c-165ab19f6763"}
+[info] 
+[info] === Serving from '/Users/matiascornejo/Documents/Projects/src/python-clean-arch'...
+[info] 
+[debug] [2023-05-17T13:18:14.693Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/neat-project-387004/sites 
+[debug] [2023-05-17T13:18:15.844Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/neat-project-387004/sites 200
+[debug] [2023-05-17T13:18:15.845Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/neat-project-387004/sites {"sites":[{"name":"projects/neat-project-387004/sites/neat-project-387004","defaultUrl":"https://neat-project-387004.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-17T13:18:15.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004/webApps/-/config [none]
+[debug] [2023-05-17T13:18:16.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004/webApps/-/config 200
+[debug] [2023-05-17T13:18:16.581Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004/webApps/-/config {"projectId":"neat-project-387004","storageBucket":"neat-project-387004.appspot.com","apiKey":"AIzaSyC6DPbusUJ_NW05dqOB0_C43cH14X4iV48","authDomain":"neat-project-387004.firebaseapp.com","messagingSenderId":"195861851511"}
+[debug] [2023-05-17T13:18:16.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 [none]
+[debug] [2023-05-17T13:18:17.085Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 200
+[debug] [2023-05-17T13:18:17.085Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neat-project-387004 {"projectId":"neat-project-387004","projectNumber":"195861851511","displayName":"neat-project","name":"projects/neat-project-387004","resources":{"hostingSite":"neat-project-387004"},"state":"ACTIVE","etag":"1_16ef6408-8e79-4db4-b48c-165ab19f6763"}
+[info] i  hosting[neat-project-387004]: Serving hosting files from: static {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mstatic\u001b[22m"}}
+[info] ✔  hosting[neat-project-387004]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] [hosting] Cloud Run rewrite {"source":"**","run":{"serviceId":"neat-api","region":"us-central1"}} triggered
+[info] [hosting] Looking up Cloud Run service "/projects/neat-project-387004/locations/us-central1/services/neat-api" for its URL
+[debug] [2023-05-17T13:18:56.442Z] >>> [apiv2][query] GET https://run.googleapis.com/v1/projects/neat-project-387004/locations/us-central1/services/neat-api [none]
+[debug] [2023-05-17T13:18:57.423Z] <<< [apiv2][status] GET https://run.googleapis.com/v1/projects/neat-project-387004/locations/us-central1/services/neat-api 200
+[debug] [2023-05-17T13:18:57.423Z] <<< [apiv2][body] GET https://run.googleapis.com/v1/projects/neat-project-387004/locations/us-central1/services/neat-api {"apiVersion":"serving.knative.dev/v1","kind":"Service","metadata":{"name":"neat-api","namespace":"195861851511","selfLink":"/apis/serving.knative.dev/v1/namespaces/195861851511/services/neat-api","uid":"0abe8dac-38f2-4ab4-b878-d7dc62490301","resourceVersion":"AAX744ICZRE","generation":2,"labels":{"cloud.googleapis.com/location":"us-central1"},"annotations":{"run.googleapis.com/client-name":"gcloud","serving.knative.dev/creator":"dmcornejorojas@gmail.com","serving.knative.dev/lastModifier":"dmcornejorojas@gmail.com","run.googleapis.com/client-version":"430.0.0","run.googleapis.com/operation-id":"abb0587a-97eb-4818-a6bd-8ae816518731","run.googleapis.com/ingress":"all","run.googleapis.com/ingress-status":"all"},"creationTimestamp":"2023-05-17T12:57:54.895236Z"},"spec":{"template":{"metadata":{"name":"neat-api-00002-riw","annotations":{"run.googleapis.com/client-name":"gcloud","run.googleapis.com/client-version":"430.0.0","autoscaling.knative.dev/maxScale":"100"}},"spec":{"containerConcurrency":80,"timeoutSeconds":300,"serviceAccountName":"195861851511-compute@developer.gserviceaccount.com","containers":[{"image":"gcr.io/neat-project-387004/neat-api","resources":{"limits":{"cpu":"1000m","memory":"512Mi"}},"ports":[{"name":"http1","containerPort":8080}],"startupProbe":{"timeoutSeconds":240,"periodSeconds":240,"failureThreshold":1,"tcpSocket":{"port":8080}}}]}},"traffic":[{"percent":100,"latestRevision":true}]},"status":{"observedGeneration":2,"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2023-05-17T13:17:20.817635Z"},{"type":"ConfigurationsReady","status":"True","lastTransitionTime":"2023-05-17T13:17:15.581596Z"},{"type":"RoutesReady","status":"True","lastTransitionTime":"2023-05-17T13:17:20.896273Z"}],"latestReadyRevisionName":"neat-api-00002-riw","latestCreatedRevisionName":"neat-api-00002-riw","traffic":[{"revisionName":"neat-api-00002-riw","percent":100,"latestRevision":true}],"url":"https://neat-api-b2jvzhgi4a-uc.a.run.app","address":{"url":"https://neat-api-b2jvzhgi4a-uc.a.run.app"}}}
+[info] [hosting] Rewriting / to https://neat-api-b2jvzhgi4a-uc.a.run.app for Cloud Run service "neat-api" for region "us-central1"
+[debug] [2023-05-17T13:18:57.425Z] >>> [apiv2][query] GET https://neat-api-b2jvzhgi4a-uc.a.run.app/ 
+[debug] [2023-05-17T13:18:57.742Z] <<< [apiv2][status] GET https://neat-api-b2jvzhgi4a-uc.a.run.app/ 200
+[debug] [2023-05-17T13:18:57.742Z] <<< [apiv2][body] GET https://neat-api-b2jvzhgi4a-uc.a.run.app/ [stream]
+[info] i  hosting: ::1 - - [17/May/2023:13:18:57 +0000] "GET / HTTP/1.1" 200 898 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [17/May/2023:13:18:57 +0000] \"GET / HTTP/1.1\" 200 898 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
